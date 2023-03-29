@@ -20,18 +20,20 @@ const History = () => {
         p: "1rem",
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "rgb(255, 180, 180)",
+        // backgroundColor: "rgb(255, 180, 180)",
       }}
     >
-      <Toolbar sx={{ justifyContent: "space-between" }}>
-        <Typography variant="h4">
+      <Toolbar sx={{ justifyContent: "flex-start" }}>
+        <Typography variant="h5">
           <HistoryRounded
             sx={{ fontSize: "inherit", verticalAlign: "middle" }}
           />{" "}
           Video History
         </Typography>
         <Button onClick={() => handleClearHistory()}>
-          <Typography variant="h6">Clear History</Typography>
+          <Typography style={{ textDecoration: "underline", color: "#000" }}>
+            Delete History
+          </Typography>
         </Button>
       </Toolbar>
       <Grid
@@ -41,6 +43,7 @@ const History = () => {
           py: "1rem",
           px: "2rem",
           alignContent: "start",
+          flexDirection: "column",
         }}
         container
         rowSpacing={3}

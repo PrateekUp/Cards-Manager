@@ -21,9 +21,11 @@ export default function PositionedMenu({ moveCardTo, moveCardFrom }) {
   return (
     <div
       style={{
-        position: "absolute",
+        position: "relative",
         top: "0.7rem",
         right: "0",
+        alignContent: "center",
+        justifyContent: "center",
       }}
     >
       <Button
@@ -53,6 +55,11 @@ export default function PositionedMenu({ moveCardTo, moveCardFrom }) {
         {buckets.map((bucket, index) => {
           return (
             <MenuItem
+              style={{
+                textAlign: "center",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
               key={bucket.id}
               onClick={() => {
                 handleClose();

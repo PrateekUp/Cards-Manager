@@ -8,8 +8,8 @@ const initialState = {
       cards: [
         {
           id: nanoid(),
-          title: "Reaction",
-          link: "https://youtu.be/VjiWpGR82t0",
+          title: "Nat Geo",
+          link: "https://www.youtube.com/embed/myBmq87fJeQ",
         },
       ],
     },
@@ -20,12 +20,12 @@ const initialState = {
         {
           id: nanoid(),
           title: "Ed sheeran",
-          link: "https://youtube.com/embed/MyNSOu-Fl-k",
+          link: "https://www.youtube.com/embed/u6wOyMUs74I",
         },
         {
           id: nanoid(),
           title: "SANAM",
-          link: "https://youtube.com/embed/mTuPDGFboNU",
+          link: "https://www.youtube.com/embed/WDT-weEgX3g",
         },
       ],
     },
@@ -36,12 +36,12 @@ const initialState = {
         {
           id: nanoid(),
           title: "Dhruv Rathi",
-          link: "https://youtu.be/nw-84LXi7Go",
+          link: "https://www.youtube.com/embed/nw-84LXi7Go",
         },
         {
           id: nanoid(),
           title: "Unacademy",
-          link: "https://www.youtube.com/live/LsFP0ibeOO0?feature=share",
+          link: "https://www.youtube.com/embed/v2X51AVgl3o",
         },
       ],
     },
@@ -70,7 +70,7 @@ export const bucketSlice = createSlice({
     addBucket: {
       reducer(state, action) {
         state.buckets.unshift({
-          name: "new bucket",
+          name: "Add a Bucket",
           id: nanoid(),
           cards: [],
           initialEdit: true,

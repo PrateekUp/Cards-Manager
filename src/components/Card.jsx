@@ -98,7 +98,7 @@ export default function CardComp({
         position: "relative",
         textOverflow: "ellipsis",
         overflow: "hidden",
-        width: "240px",
+        width: "280px",
         backgroundColor: "rgb(134, 112, 112)",
         color: "white",
       }}
@@ -109,7 +109,14 @@ export default function CardComp({
       }}
       ref={drag}
     >
-      <CardContent style={{ textOverflow: "ellipsis", overflow: "hidden" }}>
+      <CardContent
+        style={{
+          textOverflow: "ellipsis",
+          overflow: "hidden",
+          flexDirection: "row",
+          textAlign: "center",
+        }}
+      >
         <Button onClick={handleClick}>
           <Typography
             gutterBottom
@@ -120,11 +127,6 @@ export default function CardComp({
             {title}
           </Typography>
         </Button>
-        <MenuList
-          moveCardTo={moveCardTo}
-          moveCardFrom={moveCardFrom}
-          style={{ color: "white" }}
-        />
       </CardContent>
 
       <CardActions

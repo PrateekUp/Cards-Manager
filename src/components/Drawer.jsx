@@ -13,7 +13,7 @@ import { Close, Add } from "@mui/icons-material";
 import ListItem from "./ListItem.jsx";
 import { useCallback } from "react";
 
-const drawerDefaultWidth = 320;
+const drawerDefaultWidth = 360;
 const drawerMinWidth = 180;
 const drawerMaxWidth = 600;
 
@@ -106,7 +106,7 @@ function ResponsiveDrawer() {
 
   return (
     <div style={{ display: "flex", backgroundColor: "rgb(255, 222, 180)" }}>
-      <Box sx={{ display: "flex", height: "100% " }}>
+      <Box sx={{ display: "flex", height: "90vh " }}>
         {/* <CssBaseline /> */}
         <Box
           component="nav"

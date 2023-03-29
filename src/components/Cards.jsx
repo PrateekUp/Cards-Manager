@@ -42,7 +42,13 @@ const Cards = ({ cards, bucketIndex, rerenderOnce }) => {
       }}
     >
       <Grid
-        sx={{ height: "100%", mt: "0.5rem", p: "1rem", alignContent: "start" }}
+        sx={{
+          height: "100%",
+          mt: "0.5rem",
+          p: "1rem",
+          alignContent: "center",
+          flexDirection: "column",
+        }}
         container
         rowSpacing={3}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}

@@ -77,7 +77,7 @@ export default function ListItemComp({
       style={{
         backgroundColor: `${bgColor}`,
         color: `${bgColor === "" ? "inherit" : "white"}`,
-        outline: isOver ? "2px dotted red" : "",
+        outline: isOver ? "5px dotted black" : "",
       }}
       key={bucket.id}
     >
